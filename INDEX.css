@@ -1,0 +1,259 @@
+/* FOR ALL THE ATTRIBUTES TO BE IN BOX SHAPE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /*FOR BODY  */
+  body {
+    background-color: black;
+    color: white;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  /* FOR NAVIGATIONBAR */
+  .navbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    /* FLEX ALLOOWS US TO PUT MULTIPLE ELEMENTS IN SAME LINE */
+    justify-content: space-between;
+    padding: 3% 5%;
+    /*3% FROM TOP AND 5% FROM RIGHT  */
+    z-index: 10;
+  }
+  
+  /* FOR NAVIGATIONBAR */
+  .navbar_netflix {
+    height: 100%;
+    width: 125PX;
+  }
+  
+  /* FOR THE NAVIGATION ITEMS I.E LANGUAGE AND SIGN IN BUTTON */
+  .navbar_nav_items {
+    display: flex;
+    gap: 10px;
+  }
+  
+  /* FOR NETFLIX LOGO */
+  .netflix_logo {
+    width: 100%;
+    height: 100%;
+  }
+  
+  /*BORDER OF THE LANGUAGE DROPDOWN BOX  */
+  .language_drop_down {
+    background: transparent;
+    border: none;
+    color: white;
+  }
+  
+  .language_drop_down :hover {
+    color: red;
+    background-color: cyan;
+    scale: 1.1;
+  }
+  
+  /* FOR WHITE BORDER  OF THE DROPDOWN CONTAINER*/
+  .dropdown_container {
+    border: 1px solid white;
+    padding: 0.4rem;
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.4);
+    /* A is for the transparency of the dropbox */
+    /*EM:- (EMPHASIS) IT IS RELEVANT TO ITS PARENT ELEMENT 
+      REM:- IT IS RELEVANT TO THE DEFAULT FONT SIZE OF THE HTML */
+  
+  }
+  
+  .signin_button {
+    border: #dc030f;
+    background-color: #dc030f;
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    height: 35px;
+    width: 100px;
+  }
+  
+  .hero_bg_img_cont {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .hero_bg_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .hero_bg_overlay {
+    position: absolute;
+    inset:0;
+    /* INSET:-IT DEFINES DISTANCE BETWEEN ELEMENT AND PARENT ELEMNT. HERE IT IS USED FOR PUTTING BLACK SCREEN ON BACKGROND */
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+  }
+  
+  .hero_card {
+    position: absolute;
+    top: 30%;
+    left: 17%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .hero_title {
+    font-size: 3rem;
+    font-weight: 600;
+  }
+  
+  .hero_subtitle,
+  .hero_desc {
+    font-weight: 400;
+    font-size: 1.3rem;
+  }
+  
+  .email {
+    width: 450px;
+    height: 60px;
+    color: black;
+    padding: 0.25rem 0.5 rem;
+    border-radius: 3px;
+    border-color: white;
+    text-decoration: none;
+  }
+  
+  .get_started {
+    font-size: large;
+    font-weight: 3000;
+    color: white;
+    width: 170px;
+    height: 60px;
+    background-color: #dc030f;
+    border: 3px solid #dc030f;
+  }
+  
+  .card-1,
+  .card-2,
+  .card-3 {
+    border-top: 8px blue;
+    padding: 50px;
+  }
+  
+  .card-1 {
+    position: relative;
+    display: inline-grid;
+    grid-template-columns: 50% 40%;
+    text-align: left;
+    align-items: center;
+    padding: 25px 45px 50px;
+  }
+  
+  .desc-1 {
+    padding-left: 80px;
+  }
+  
+  .card-1 video {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    grid-column: 2/2;
+    grid-row: 1/2;
+    z-index: -1;
+    background-size: contain;
+  }
+  
+  .card-1 img {
+    grid-column: 2/2;
+    grid-row: 1/2;
+  }
+  
+  .style-cards h1 {
+    font-size: 3rem;
+    padding: 1rem;
+    padding-left: 0;
+  }
+  
+  .style-cards h3 {
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
+  
+
+  .card-2{
+    position: relative;
+    display: inline-grid ;
+    grid-template-columns: 40% 50%;
+    text-align:center;
+    align-items: center;
+    padding: 10px 150px 50px;
+  }
+
+  .card-2 img {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  
+  .desc-2{
+    padding-left: 10px;
+  }
+
+  .card-3{
+    position: relative;
+    display: inline-grid;
+    grid-template-columns: 50% 40%;
+    text-align: left;
+    align-items: center;
+    padding: 25px 45px 50px;
+  }
+
+  .desc-3{
+    padding-left: 80px;
+    padding-right: 20px;
+  }
+
+  .card-3 img {
+    width: 110%;
+    grid-column: 2/2;
+    grid-row: 1/2;
+  }
+  
+  .card-3 video {
+    position: relative;
+    top: -87px;
+    left: 125px;
+    width: 64%;
+    height: 78%;
+    grid-column: 2/2;
+    grid-row: 1/2;
+    z-index: -1;
+  }
+
+  .footer,
+  footer a{
+    padding-top: 40px;
+    padding-left: 90px;
+    color: #999;
+    font-size: 0.9rem;
+    padding-bottom: 30px;
+  }
+
+  .footer p{
+    margin-bottom: 1.5rem;
+  }
+  
+  .footer .footer-cols{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 2rem;
+  }
+
+  .footer li{
+    line-height: 1.9;
+  }

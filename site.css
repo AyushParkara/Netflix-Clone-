@@ -1,0 +1,84 @@
+body{
+    background-color: black;
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+.navbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    /* FLEX ALLOOWS US TO PUT MULTIPLE ELEMENTS IN SAME LINE */
+    justify-content: space-between;
+    padding: 3% 5%;
+    /*3% FROM TOP AND 5% FROM RIGHT  */
+    z-index: 10;
+  }
+
+.navbar_netflix {
+    height: 100%;
+    width: 125PX;
+  }
+
+  .netflix_logo {
+    width: 100%;
+    height: 100%;
+  }
+
+  .hero_bg_img_cont {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .hero_bg_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .hero_bg_overlay {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+  }
+  
+   .hero_bg_overlay .videos1  {
+      display: flex;
+      gap: 30px;
+      padding-top:120px ;
+      padding-left: 50px;
+  }
+
+
+  .hero_bg_overlay .videos1 .video1  h3{
+    text-align: center;
+     color: white;
+     text-decoration: none;
+  }
+
+  .hero_bg_overlay .videos1 .video1 img,
+  .hero_bg_overlay .videos2 .video2 img{
+    border: 3px solid white ;
+  }
+
+
+  .hero_bg_overlay .videos2 .video2  h3{
+    text-align: center;
+     color: white;
+     text-decoration: none;
+  }
+
+  .hero_bg_overlay .videos2  {
+    display: flex;
+    gap: 30px;
+    padding-top:  30px ;
+    padding-left: 50px;
+}
+
+
+.hero_bg_overlay .videos2 .video1 .video2 h3{
+   color: white;
+   text-decoration: none;
+}
